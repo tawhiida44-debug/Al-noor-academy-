@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Al‑Noor Islamic Primary School</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+(function(){
+  var s=document.createElement('style');
+  s.textContent=':root{--bg:#faf9f4;--card:#ffffff;--text:#0f172a;--muted:#64748b;--accent:#297a2e;--accent-soft:rgba(41,122,46,.14);--accent2:#d97706;--accent2-soft:rgba(217,119,6,.14);--border:rgba(15,23,42,.08)}'
+  +'html{scroll-behavior:smooth}body{margin:0;font-size:17px;line-height:1.7}'
+  +'.reveal{opacity:0;transform:translateY(20px);animation:fadeUp .6s ease forwards}@keyframes fadeUp{to{opacity:1;transform:translateY(0)}}'
+  +'.feat-card{transition:transform .25s ease,box-shadow .25s ease}.feat-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(41,122,46,.12)}'
+  +'.grad-text{background:linear-gradient(100deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}'
+  +'.arabic{font-family:"Amiri",serif;line-height:1.6}'
+  +'.rtl-page{direction:rtl;text-align:right}.rtl-page .navlink::after{left:auto;right:0}'
+  +'.lang-btn{border:1px solid var(--border);padding:7px 11px;border-radius:8px;font-size:14px;margin:0 4px;cursor:pointer}'
+  +'.lang-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}'
+  +'.whatsapp-float{position:fixed;z-index:99;bottom:22px;right:22px;width:56px;height:56px;border-radius:99px;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(37,211,102,.35)}'
+  +'.rtl-page .whatsapp-float{right:auto;left:22px}';
+  document.head.appendChild(s);
+})();
+</script>
+</head>
+<body style="font-family:'Baloo 2',cursive;background:var(--bg);color:var(--text);">
+
+<a class="whatsapp-float" href="https://wa.me/254706308117" target="_blank" aria-label="Chat on WhatsApp">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="#fff">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.6 14.2c-.2.6-1.2 1.1-1.7 1.2-.4.1-.9.1-1.4-.1l-2.1-.8c-1.5-.6-2.7-1.9-3.4-3.4l-.8-2.1c-.2-.5-.2-1 0-1.4.1-.5.6-1.5 1.2-1.7.3-.1.7-.1 1.1.1l1.7.7c.3.1.6.5.8.8.2.3.1.7 0 1l-.3.6c-.1.2-.2.3-.1.5.2.3.5.6.8.8.3.2.6.3.9.2l.6-.3c.3-.1.7-.1 1 .2l1.5 1.2c.4.3.5.8.3 1.2z"/>
+</svg>
+</a>
+
+<div style="background:var(--accent2-soft);text-align:center;padding:9px 16px;font-size:14px;">
+  <span data-txt="demoNote">Demo site — replace details with real school info</span>
+</div>
+
+<div style="position:sticky;top:0;z-index:50;background:rgba(250,249,244,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);">
+  <div class="max-w-6xl mx-auto px-5" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;height:auto;padding:11px 5px;">
+    <a href="#home" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);">
+      <div style="width:44px;height:44px;border-radius:12px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;color:var(--accent);">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+          <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+        </svg>
+      </div>
+      <div>
+        <div style="font-weight:800;font-size:18px;" data-txt="schoolName">Al‑Noor Islamic Primary School</div>
+        <div style="font-size:12px;color:var(--muted);text-transform:uppercase;" data-txt="schoolSub">Primary • Islamic &amp; Secular</div>
+      </div>
+    </a>
+    <div style="margin:7px 0;">
+      <button class="lang-btn active" data-lang="en">English</button>
+      <button class="lang-btn" data-lang="sw">Kiswahili</button>
+      <button class="lang-btn" data-lang="ar">العربية</button>
+    </div>
+  </div>
+</div>
+
+<section id="home" style="padding:64px 20px;">
+  <div class="max-w-6xl mx-auto">
+    <p class="arabic" style="font-size:32px;color:var(--accent);margin:0 0 20px;">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+    <p style="font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);font-weight:700;" data-txt="tagline">Islamic • Secular • CBC Primary</p>
+    <h1 style="font-size:clamp(34px,6vw,54px);font-weight:800;line-height:1.15;margin:20px 0;" data-txt="heroHead">Nurturing minds,<br>enriching <span class="grad-text">souls</span>.</h1>
+    <p style="font-size:18px;color:var(--muted);max-width:640px;" data-txt="heroText">A full Kenyan CBC primary education alongside authentic Islamic studies — Quran, Hifz, Arabic and character‑building — under one roof.</p>
+    <div style="margin:28px 0;display:flex;flex-wrap:wrap;gap:15px;">
+      <a href="#admissions" style="background:var(--accent);color:#fff;padding:14px 28px;border-radius:999px;text-decoration:none;font-weight:700;font-size:17px;" data-txt="btnEnrol">Enrol now</a>
+      <a href="#contact" style="background:var(--card);border:1px solid var(--border);padding:14px 28px;border-radius:999px;text-decoration:none;font-weight:700;font-size:17px;" data-txt="btnVisit">Book a visit</a>
+    </div>
+  </div>
+</section>
+
+<section id="about" style="padding:64px 20px;">
+  <div class="max-w-6xl mx-auto">
+    <h2 style="font-size:clamp(26px,4vw,36px);font-weight:800;margin-bottom:14px;" data-txt="aboutHead">About Our School</h2>
+    <p style="color:var(--muted);max-width:660px;" data-txt="aboutText">We believe children can do well in class and grow in faith at the same time. Learners follow full Kenyan CBC plus daily Islamic lessons, taught by qualified, caring teachers.</p>
+  </div>
+</section>
+
+<section id="curriculum" style="background:var(--card);border-top:1px solid var(--border);padding:64px 20px;">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 style="font-size:clamp(26px,4vw,36px);font-weight:800;margin-bottom:14px;" data-txt="currHead">Two pathways. One school day.</h2>
+    <p style="color:var(--muted);max-width:660px;margin:0 auto 38px;" data-txt="currSub">Every pupil studies both streams — no choosing between academic success and Islamic upbringing.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:26px;">
+      <div style="flex:1 1 310px;background:var(--bg);border:1px solid var(--border);border-radius:20px;padding:30px;border-top:5px solid var(--accent);">
+        <h3 style="font-size:23px;font-weight:800;" data-txt="secHead">Secular Studies (CBC)</h3>
+        <ul style="list-style:none;padding:0;margin-top:16px;">
+          <li data-txt="s1">+ English, Kiswahili, Mathematics</li>
+          <li data-txt="s2">+ Science &amp; Technology</li>
+          <li data-txt="s3">+ Social Studies, Creative Arts</li>
+          <li data-txt="s4">+ P.E, Computer / ICT</li>
+        </ul>
+      </div>
+      <div style="flex:1 1 310px;background:var(--bg);border:1px solid var(--border);border-radius:20px;padding:30px;border-top:5px solid var(--accent2);">
+        <h3 style="font-size:23px;font-weight:800;" data-txt="islHead">Islamic Studies</h3>
+        <ul style="list-style:none;padding:0;margin-top:16px;">
+          <li data-txt="i1">+ Quran recitation &amp; Tajweed</li>
+          <li data-txt="i2">+ Hifz (memorisation)</li>
+          <li data-txt="i3">+ Hadith, Seerah, Fiqh &amp; Aqeedah</li>
+          <li data-txt="i4">+ Arabic, Salah &amp; Akhlaq</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="life" style="padding:64px 20px;">
+  <div class="max-w-6xl mx-auto">
+    <h2 style="font-size:clamp(26px,4vw,36px);font-weight:800;margin-bottom:14px;text-align:center;" data-txt="lifeHead">Life At School</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;margin-top:24px;">
+      <div class="feat-card" style="background:var(--card);border:1px solid var(--border);border-radius:18px;padding:26px;">
+        <h4 style="font-size:19px;font-weight:700;" data-txt="l1t">Small caring classes</h4>
+        <p style="color:var(--muted);" data-txt="l1p">Every child gets attention from teachers.</p>
+      </div>
+      <div class="feat-card" style="background:var(--card);border:1px solid var(--border);border-radius:18px;padding:26px;">
+        <h4 style="font-size:19px;font-weight:700;" data-txt="l2t">Safe &amp; Islamic environment</h4>
+        <p style="color:var(--muted);" data-txt="l2p">Dedicated musolla, good conduct and halal meals.</p>
+      </div>
+      <div class="feat-card" style="background:var(--card);border:1px solid var(--border);border-radius:18px;padding:26px;">
+        <h4 style="font-size:19px;font-weight:700;" data-txt="l3t">Fun activities</h4>
+        <p style="color:var(--muted);" data-txt="l3p">Sports, nasheed, art and Quran competitions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" style="padding:64px 20px;background:var(--bg);">
+  <div class="max-w-6xl mx-auto">
+    <h2 style="font-size:clamp(26px,4vw,36px);font-weight:800;margin-bottom:14px;text-align:center;" data-txt="galHead">Our School Moments</h2>
+    <p style="text-align:center;color:var(--muted);max-width:640px;margin:0 auto 28px;" data-txt="galSub">Library, activities and our Quran memorisation sessions</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;">
+      <div style="border-radius:16px;overflow:hidden;border:1px solid var(--border);">
+        <img src="https://via.placeholder.com/600x400/e8f3e8/297a2e?text=School+Library" alt="School library" style="width:100%;height:220px;object-fit:cover;">
+      </div>
+      <div style="border-radius:16px;overflow:hidden;border:1px solid var(--border);">
+        <img src="https://via.placeholder.com/600x400/fef3e0/d97706?text=Quran+Hifz+Session" alt="Quran memorisation" style="width:100%;height:220px;object-fit:cover;">
+      </div>
+      <div style="border-radius:16px;overflow:hidden;border:1px solid var(--border);">
+        <img src="https://via.placeholder.com/600x400/eef6ff/2b549c?text=Outdoor+Activities" alt="Extracurricular activities" style="width:100%;height:220px;object-fit:cover;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="admissions" style="background:linear-gradient(135deg,var(--accent),#1d5c21);color:#fff;padding:64px 20px;">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 style="font-size:clamp(26px,4vw,36px);font-weight:800;margin-bottom:14px;" data-txt="admHead">Join our school family</h2>
+    <p style="opacity:0.88;max-width:640px;margin:0 auto 34px;" data-txt="admSub">Open for PP1 – Grade 6. Limited places, apply early.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:22px;justify-content:center;">
+      <div style="flex:1 1 220px;background:rgba(255,255,255,.08);border-radius:16px;padding:26px;">
+        <div style="font-size:34px;font-weight:800;color:var(--accent2);">01</div>
+        <h4 style="font-size:19px;font-weight:700;margin:8px 0;" data-txt="a1t">Enquire</h4>
+        <p style="opacity:0.85;" data-txt="a1p">Send message or call us for details.</p>
+      </div>
+      <div style="flex:1 1 220px;background:rgba(255,255,255,.08);border-radius:16px;padding:26px;">
+        <div style="font-size:34px;font-weight:800;color:var(--accent2);">02</div>
+        <h4 style="font-size:19px;font-weight:700;margin:8px 0;" data-txt="a2t">Visit &amp; assess</h4>
+        <p style="opacity:0.85;" data-txt="a2p">Tour school and short placement check.</p>
+      </div>
+      <div style="flex:1 1 220px;background:rgba(255,255,255,.08);border-radius:16px;padding:26px;">
+        <div style="font-size:34px;font-weight:800;color:var(--accent2);">03</div>
+        <h4 style="font-size:19px;font-weight:700;margin:8px 0;" data-txt="a3t">Register</h4>
+        <p style="opacity:0.85;" data-txt="a3p">Fill forms then your child starts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="padding:64px 20px;">
+  <div class="max-w-6xl mx-auto">
+    <h2 style="font-size:clamp(26px,4vw,36px);font-weight:800;margin-bottom:14px;" data-txt="contHead">Contact Us</h2>
+    <p style="color:var(--muted);margin-bottom:12px;" data-txt="addrLine">Address: [Your street, Nairobi‑Kenya]</p>
+    <p style="color:var(--muted);margin-bottom:12px;" data-txt="phoneLine">Phone / WhatsApp: +254 706 308 117</p>
+    <p style="color:var(--muted);margin-bottom:12px;" data-txt="emailLine">Email: info@yourschool.ac.ke</p>
+    <p style="color:var(--muted);" data-txt="hoursLine">Hours: Mon‑Fri 7:30 AM – 4:00 PM</p>
+  </div>
+</section>
+
+<footer style="background:#0f1f14;color:rgba(255,255,255,.8);padding:34px 20px;text-align:center;">
+  <p class="arabic" style="font-size:22px;">وَقُل رَّبِّ زِدْنِي عِلْمًا</p>
+  <p style="margin-top:10px;" data-txt="footCopy">&copy; 2026 Al‑Noor Islamic Primary School</p>
+</footer>
+
+<script>
+const texts={
+  en:{
+    demoNote:"Demo site — replace details with real school info",
+    schoolName:"Al‑Noor Islamic Primary School",
+    schoolSub:"Primary • Islamic & Secular",
+    tagline:"Islamic • Secular • CBC Primary",
+    heroHead:"Nurturing minds,<br>enriching souls.",
+    heroText:"A full Kenyan CBC primary education alongside authentic Islamic studies — Quran, Hifz, Arabic and character‑building — under one roof.",
+    btnEnrol:"Enrol now",
+    btnVisit:"Book a visit",
+    aboutHead:"About Our School",
+    aboutText:"We believe children can do well in class and grow in faith at the same time. Learners follow full Kenyan CBC plus daily Islamic lessons, taught by qualified, caring teachers.",
+    currHead:"Two pathways. One school day.",
+    currSub:"Every pupil studies both streams — no choosing between academic success and Islamic upbringing.",
+    secHead:"Secular Studies (CBC)",
+    s1:"+ English, Kiswahili, Mathematics",
+    s2:"+ Science & Technology",
+    s3:"+ Social Studies, Creative Arts",
+    s4:"+ P.E, Computer / ICT",
+    islHead:"Islamic Studies",
+    i1:"+ Quran recitation & Tajweed",
+    i2:"+ Hifz (memorisation)",
+    i3:"+ Hadith, Seerah, Fiqh & Aqeedah",
+    i4:"+ Arabic, Salah & Akhlaq",
+    lifeHead:"Life At School",
+    l1t:"Small caring classes", l1p:"Every child gets attention from teachers.",
+    l2t:"Safe & Islamic environment", l2p:"Dedicated musolla, good conduct and halal meals.",
+    l3t:"Fun activities", l3p:"Sports, nasheed, art and Quran competitions.",
+    galHead:"Our School Moments",
+    galSub:"Library, activities and our Quran memorisation sessions",
+    admHead:"Join our school family",
+    admSub:"Open for PP1 – Grade 6. Limited places, apply early.",
+    a1t:"Enquire", a1p:"Send message or call us for details.",
+    a2t:"Visit & assess", a2p:"Tour school and short placement check.",
+    a3t:"Register", a3p:"Fill forms then your child starts.",
+    contHead:"Contact Us",
+    addrLine:"Address: [Your street, Nairobi‑Kenya]",
+    phoneLine:"Phone / WhatsApp: +254 706 308 117",
+    emailLine:"Email: info@yourschool.ac.ke",
+    hoursLine:"Hours: Mon‑Fri 7:30 AM – 4:00 PM",
+    footCopy:"© 2026 Al‑Noor Islamic Primary School"
+  },
+  sw:{
+    demoNote:"Tovuti ya mfano — badilisha na taarifa za shule yako",
+    schoolName:"Shule ya Msingi ya Kiislamu Al‑Noor",
+    schoolSub:"Msingi • Kiislamu na Kawaida",
+    tagline:"Kiislamu • Kawaida • Mtaala wa CBC",
+    heroHead:"Kukuza akili,<br>na kuimarisha nafsi.",
+    heroText:"Elimu kamili ya CBC ya Kenya pamoja na masomo ya Kiislamu — Quran, Hifz, Kiarabu na tabia nzuri — kwa shule moja.",
+    btnEnrol:"Jisajili sasa",
+    btnVisit:"Weka nafasi ya kutembelea",
+    aboutHead:"Kuhusu Shule Yetu",
+    aboutText:"Tunaamini watoto wanaweza kufaulu darasani na kukuza imani kwa wakati mmoja. Wanafunzi hufuata mtaala kamili wa CBC pamoja na masomo ya Kiislamu kila siku.",
+    currHead:"Njia mbili. Siku moja ya shule.",
+    currSub:"Kila mwanafunzi husoma masomo yote mawili — hawezi kuchagua kati ya elimu na imani.",
+    secHead:"Masomo ya Kawaida (CBC)",
+    s1:"+ Kiingereza, Kiswahili, Hisabati",
+    s2:"+ Sayansi na Teknolojia",
+    s3:"+ Masomo ya Jamii, Sanaa",
+    s4:"+ Michezo, Kompyuta",
+    islHead:"Masomo ya Kiislamu",
+    i1:"+ Usomaji wa Quran na Tajweed",
+    i2:"+ Hifz (kukariri Quran)",
+    i3:"+ Hadith, Seerah, Fiqh na Aqeedah",
+    i4:"+ Kiarabu, Swala na Tabia",
+    lifeHead:"Maisha Shuleni",
+    l1t:"Madarasa madogo yenye upendo", l1p:"Kila mtoto hupata uangalizi wa walimu.",
+    l2t:"Mazingira salama ya Kiislamu", l2p:"Sehemu ya kusali, tabia nzuri na vyakula vya halali.",
+    l3t:"Shughuli za kufurahisha", l3p:"Michezo, nasheed, sanaa na mashindano ya Quran.",
+    galHead:"Picha za Shule Yetu",
+    galSub:"Maktaba, shughuli na masomo ya kukariri Quran",
+    admHead:"Jiunge na familia ya shule yetu",
+    admSub:"Inafunguliwa PP1 – Daraja la 6. Nafasi chache, omba mapema.",
+    a1t:"Uliza maswala", a1p:"Tuma ujumbe au piga simu kwa maelezo.",
+    a2t:"Tembelea na tathmini", a2p:"Zunguka shule na uchunguzi mfupi wa uwezo.",
+    a3t:"Jisajili", a3p:"Jaza fomu kisha mtoto wako anaanza.",
+    contHead:"Wasiliana Nasi",
+    addrLine:"Anwani: [Mtaa wako, Nairobi‑Kenya]",
+    phoneLine:"Simu / WhatsApp: +254 706 308 117",
+    emailLine:"Barua pepe: info@yourschool.ac.ke",
+    hoursLine:"Saa za kazi: Jumatatu‑Ijumaa 7:30 asubuhi – 4:00 jioni",
+    footCopy:"© 2026 Shule ya Msingi ya Kiislamu Al‑Noor"
+  },
+  ar:{
+    demoNote:"موقع تجريبي – استبدل بالبيانات الحقيقية للمدرسة",
+    schoolName:"مدرسة النور الإسلامية الابتدائية",
+    schoolSub:"ابتدائية • إسلامية وعلوم دنيوية",
+    tagline:"إسلامية • علوم دنيوية • منهج CBC الكيني",
+    heroHead:"نربي العقول،<br>ونغذي الأرواح.",
+    heroText:"تعليم ابتدائي كامل بمنهج CBC الكيني مع دراسات إسلامية أصيلة – القرآن، الحفظ، العربية وأخلاق – في مدرسة واحدة.",
+    btnEnrol:"سجل الآن",
+    btnVisit:"احجز زيارة",
+    aboutHead:"عن مدرستنا",
+    aboutText:"نؤمن أن الأطفال يمكنهم النجاح في الدراسة ونمو إيمانهم في نفس الوقت. يدرسون المنهج الكيني الكامل مع دروس إسلامية يومية من معلمين مؤهلين.",
+    currHead:"مساران. يوم دراسي واحد.",
+    currSub:"كل تلميذ يدرس المسارين معاً – لا خيار بين النجاح الدراسي والتربية الإسلامية.",
+    secHead:"العلوم الدنيوية (منهج CBC)",
+    s1:"+ الإنجليزية، السواحيلية، الرياضيات",
+    s2:"+ العلوم والتكنولوجيا",
+    s3:"+ الدراسات الاجتماعية، الفنون",
+    s4:"+ التربية البدنية، الحاسوب",
+    islHead:"الدراسات الإسلامية",
+    i1:"+ تلاوة القرآن والتجويد",
+    i2:"+ الحفظ",
+    i3:"+ الحديث، السيرة، الفقه والعقيدة",
+    i4:"+ العربية، الصلاة والأخلاق",
+    lifeHead:"الحياة في المدرسة",
+    l1t:"فصول صغيرة ورحيمة", l1p:"كل طفل يحصل على اهتمام المعلمين.",
+    l2t:"بيئة إسلامية آمنة", l2p:"مكان للصلاة، أخلاق حسنة ووجبات حلال.",
+    l3t:"أنشطة ممتعة", l3p:"رياضة، أناشيد، فنون ومسابقات قرآنية.",
+    galHead:"لحظات من مدرستنا",
+    galSub:"المكتبة – الأنشطة – حلقات حفظ القرآن",
+    admHead:"انضم إلى عائلتنا المدرسية",
+    admSub:"متاح من المستوى PP1 إلى الصف 6. الأماكن محدودة، سجل مبكراً.",
+    a1t:"استفسار", a1p:"أرسل رسالة أو اتصل بنا للتفاصيل.",
+    a2t:"زيارة وتقييم", a2p:"جولة في المدرسة واختبار قصير للمستوى.",
+    a3t:"التسجيل", a3p:"املأ النماذج ثم يبدأ طفلك الدراسة.",
+    contHead:"اتصل بنا",
+    addrLine:"العنوان: [اسم الشارع، نيروبي‑كينيا]",
+    phoneLine:"الهاتف / واتساب: +254 706 308 117",
+    emailLine:"البريد الإلكتروني: info@yourschool.ac.ke",
+    hoursLine:"ساعات العمل: الإثنين‑الجمعة ٧:٣٠ صباحاً – ٤:٠٠ مساءً",
+    footCopy:"© ٢٠٢٦ مدرسة النور الإسلامية الابتدائية"
+  }
+};
+
+const page=document.body;
+document.querySelectorAll('.lang-btn').forEach(btn=>{
+  btn.onclick=()=>{
+    const lang=btn.dataset.lang;
+    document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    if(lang==='ar') page.classList.add('rtl-page');
+    else page.classList.remove('rtl-page');
+    document.querySelectorAll('[data-txt]').forEach(el=>{
+      const k=el.dataset.txt;
+      if(texts[lang][k]) el.innerHTML=texts[lang][k];
+    });
+  };
+});
+</script>
+</body>
+</html>
